@@ -1,0 +1,153 @@
+@use '../ferramentas/variaveis';
+
+header{
+    padding-top: 3rem;
+    background-color: variaveis.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin-bottom: 3rem;
+    }
+    .img__container{
+        width: 100%;
+        aspect-ratio: 20/7;
+        background-image: url("../assets/tablet/image-hero.png");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    h1{
+        color: variaveis.$slate-900;
+        font-size:2.5rem;
+        line-height: 110%;
+        text-align: center;
+        font-weight: 900;
+        margin-top: 3rem;
+    }
+    p{
+        color: variaveis.$slate-600;
+        font-size: 1rem;
+        line-height: 150%;
+        text-align: center;
+        font-weight: 500;
+        margin: 1.5rem 2.19rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .btn__download{
+            background-color: variaveis.$cyan-600;
+            color: variaveis.$white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            span{
+                color: variaveis.$cyan-300;
+            }
+        }
+        }
+        .btn__learn{
+            background-color: variaveis.$purple-600;
+            color: variaveis.$white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            
+    }   
+}      
+
+// @media  (min-width: 768px) and (max-width: 990px){ 
+@media  (min-width: 768px){ 
+    header{
+        .harder__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1{
+                    text-align: center;
+                    margin: 4rem 0 2rem 0;
+                    width: 50vw;
+                    font-size: 3rem;
+                }
+                p{
+                    text-align: center;
+                    width: 50%;
+                }
+                nav{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-bottom: 4rem;
+                    .btn__download{
+                        padding: 1rem 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media  (min-width: 991px) and (max-width: 1440px){
+@media  (min-width: 1201px) {
+    header{
+        .harder__container{
+            display: flex;
+            flex-direction: row;
+            .img__container{
+                display: none;
+            }
+            .img__container-esquerda{
+                display: block;
+                width: 30vw;
+                aspect-ratio: 9/7;
+                background-image: url("../assets/desktop/image-hero-left.png");
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .img__container-direita{
+                width: 30vw;
+                aspect-ratio: 9/7;
+                background-image: url("../assets/desktop/image-hero-right.png");
+                background-size:cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1{
+                    text-align: center;
+                    width: 30vw;
+                }
+                p{
+                    text-align: center;
+                    width: 30vw;
+                }
+                nav{
+                    text-align: center;
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}

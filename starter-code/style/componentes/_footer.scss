@@ -1,0 +1,122 @@
+@use '../ferramentas/variaveis';
+
+footer{
+    background-color: variaveis.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    .container__footer{ 
+        position: relative;   
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+        .footer__title{
+            z-index: 2;
+            margin: 4rem 2rem 2rem 2rem;
+            font-size: 2rem;
+            line-height: 110%;
+            text-align: center;
+            font-weight: 900;
+            color: variaveis.$white;
+        }
+        .footer__text{
+            z-index: 2;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 150%;
+            font-weight: 500;
+            color: variaveis.$white;
+            padding: 0 2rem;
+        }
+        .btn__download{
+            display: flex;
+            z-index: 2;
+            background-color: variaveis.$purple-600;
+            color: variaveis.$white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-size: .8rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 1.5rem 5.7rem 1.5rem 5.7rem;
+            span{
+                color: variaveis.$purple-300;
+            }
+        }
+        .camada{
+            background-image: url("../assets/tablet/image-footer.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: variaveis.$cyan-600;
+            background-blend-mode:multiply ;
+            opacity: 0.55;
+            z-index: 1;
+            width: 100%;
+            height: 40vh;
+            position: absolute;
+        }
+    }
+}
+
+@media  (min-width: 768px){
+    footer{
+        .container__footer{ 
+            position: absolute;   
+            justify-content: center;
+            align-items: center;
+            .footer__title{
+                font-size: 2rem;
+            .footer__text{
+                font-size: 1rem;
+            .btn__download{
+                padding: 1rem 2.5rem;
+                font-size: .8rem;
+                margin: 0.5rem 5.7rem 0.5rem 5.7rem;
+                span{
+                    color: variaveis.$purple-300;
+                }
+            }
+            .camada{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+} 
+    }
+}
+
+// @media (min-width: 940px) and (max-width: 1440px) {
+@media  (max-width: 1201px) {
+    footer{
+        justify-content: center;
+        .container__footer{
+            background-color: variaveis.$white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .footer__title{
+                font-size: 1.5rem;
+                padding: 0 0 0 5rem;
+                margin: 0;
+                text-align: left;
+            }
+            .btn__download{
+                display: flex; 
+                gap: .5rem;
+                margin: 0 5rem 0 0;
+            }
+            .camada{
+                opacity: 0.85;
+            }
+        }
+}
+}

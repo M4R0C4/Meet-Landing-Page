@@ -1,0 +1,27 @@
+@use '../ferramentas/variaveis';
+
+.number2{
+    img{
+        position: absolute;
+        left: 50%;
+        transform: translate(-6.5vw, -14.9vh);
+        z-index: 3;
+    }
+}
+// @media  (min-width: 420px) and (max-width: 940px){
+@media  (min-width: 768px){ 
+    .number2{
+        img{
+            transform: translate(-3vw, -14.5vh);
+        }
+    }
+}
+
+// @media (min-width: 941px) and (max-width: 1440px) {
+@media  (min-width: 1201px) {
+    .number2{
+        img{
+            transform: translate(-2vw, -14vh);
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use '../ferramentas/variaveis';
+
+main{
+    background-color: variaveis.$white;
+    .img__container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 16rem 0 8rem 0;
+    }
+        .img_1, .img_2, .img_3, .img_4{
+        width: 9.2rem;
+        height: 9rem;
+        border-radius: 10px;
+    }
+    .main__text-1{
+        color:variaveis.$cyan-600;
+        font-size: .75rem;
+        letter-spacing: .25rem;
+        text-transform: uppercase;
+        line-height: 110%;
+        text-align: center;
+        font-weight: 900;
+        padding: 0 2.5rem;
+    }
+    .main__text-2{
+        color:variaveis.$slate-900;
+        font-size: 2rem;
+        line-height: 110%;
+        text-align: center;
+        font-weight: 900;
+        padding: 2rem;
+    }
+    .main__text-3{
+        padding: 0 2rem 8rem 2rem;
+        text-align: center;
+        font-size: 1rem;
+        color: variaveis.$slate-600;
+        line-height: 150%;
+        font-weight: 500;
+    }
+}
+// @media  (min-width: 420px) and (max-width: 940px){ 
+@media  (min-width: 768px){ 
+    main{
+        .img__container{
+            .img_1, .img_2, .img_3, .img_4{
+                width: 10rem;
+                height: 9.5rem;
+            }
+        }
+        .main__text-3{
+            padding: 0 2rem 12rem 2rem;
+        }
+    }
+}
+    
+
+// @media (min-width: 941px) and (max-width: 1440px){
+@media  (min-width: 1201px) {
+    main{
+        .img__container{
+            .img_1, .img_2, .img_3, .img_4{
+                width: 14rem;
+                height: 14rem;
+            }
+        }
+        .main__text-3{
+            padding: 0 2rem 20rem 2rem;
+        }
+    }
+}

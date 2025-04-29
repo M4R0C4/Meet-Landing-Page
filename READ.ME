@@ -1,0 +1,102 @@
+# Frontend Mentor - Meet Landing Page Solution
+
+This is my solution to the [Meet Landing Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). I completed this challenge to practice my web development skills.
+
+## Table of contents
+
+- [Frontend Mentor - Meet Landing Page Solution](#frontend-mentor---meet-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The Challenge](#the-challenge)
+    - [Links](#links)
+  - [My Process](#my-process)
+    - [Built With](#built-with)
+    - [What I Learned](#what-i-learned)
+    - [Continued Development](#continued-development)
+    - [Userful Resources](#userful-resources)
+    - [Author](#author)
+
+## Overview
+
+### The Challenge
+The main requirements were:
+- Create this landing page as close to the design as possible
+- Implement a responsive layout that works across different screen sizes
+
+### Links
+- Solution URL: Coming soon
+- Live Site URL: Coming soon
+
+## My Process
+
+### Built With
+- Semantic HTML5
+- SCSS for styling
+- CSS Flexbox
+- Mobile-first workflow
+- Responsive design techniques
+
+### What I Learned
+The main technical challenge I overcame was organizing elements within divs across different screen sizes. For example:
+- In the header: elements stack vertically and center on mobile/tablet
+- On larger screens: elements appear horizontally, vertically, and some new elements appear
+
+Here's a code snippet I'm proud of:
+
+```html
+<header>
+    <img src="./assets/logo.svg" alt="meet Logo">
+    <div class="harder__container">
+      <div class="img__container img__container-esquerda"></div>
+      <div class="content">
+        <h1>Group Chat for Everyone</h1>
+        <p>Meet makes it easy to connect with others face-to-face virtually...</p>
+        <nav class="bottons">
+          <a class="btn__download" href="#">Download <span>v1.3</span></a>
+          <a class="btn__learn" href="#">What is it?</a>
+        </nav>
+      </div>
+      <div class="img__container-direita"></div>
+    </div>
+</header>
+```
+```
+SCSS
+@media (min-width: 1201px) {
+    header {
+        .harder__container {
+            display: flex;
+            flex-direction: row;
+            .img__container {
+                display: none;
+            }
+            .img__container-esquerda {
+                display: block;
+                width: 30vw;
+                aspect-ratio: 9/7;
+                background-image: url("../assets/desktop/image-hero-left.png");
+                background-size: cover;
+                background-position: center;
+            }
+            // Additional styles...
+        }
+    }
+}
+```
+### Continued Development
+Areas I want to focus on in future projects:
+
+- Improving responsive design skills
+- Mastering SCSS for more efficient styling
+- Landing page development techniques
+
+### Userful Resources
+
+- MDN Web Docs - For reliable HTML/CSS references
+- CSS-Tricks - For layout inspiration and solutions
+
+### Author
+
+- Website - [Mariana Candido](https://www.your-site.com)
+- Frontend Mentor - [@M4R0C4](https://www.frontendmentor.io/profile/M4R0C4)
+- GitHub - [@M4R0C4](https://github.com/M4R0C4)
